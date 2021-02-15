@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+body {
+    background-color: #EF8105;
+    color: black;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+    font-size: 14pt;
+    background-image: url(../images/rango.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#container {
+    width: 1280px;
+    height: auto;
+    background-color: black;
+    margin: auto;
+}
+/*Float the aside so it floats next to main. Reduce width by 150 px, so they both line up with header*/
+aside {
+    width: 150px;
+    height: 1200px;
+    background-color:lightcoral;
+    float: left;
+    clear: none;
+}
+header {
+    width: 1280px;
+    height: 250px;
+    background-color: #008000;
+    background-image: url(../images/sambuco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	margin: 50px 0px 0px 0px;
+}
+main {
+    width: 1100px;
+    height: 2000px;
+    float: left;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+/*clear the float so the footer shows up in the right place again*/
+
+footer {
+    width: 1280px;
+    height: 50px;
+    clear: both;
+	background-color:orange
+}
+
+h1 {
+ 
+  font-family: politica,sans-serif;
+font-weight: 700;
+font-style: normal;
+color: white
+}
+p{
+    font-family: canada-type-gibson,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+	color: white
+}
+img {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-family: neonoir, "sans-serif;";
+}
+
+.floatLeft{
+	float: left;
+}
+h3 {
+    font-size: 12pt;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+article {
+    margin-bottom: 50px;
+    font-family: neonoir, "sans-serif;";
+    font-size: 20pt;
+}
+nav {
+    width: 1280px;
+    min-width: 0px;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    background-color: orange;
+}
+#container nav li {
+    display: block;
+    list-style-type: none;
+    float: left;
+    width: 180px;
+    margin-right: 0px 60px 0px 0px;
+    font-family: neonoir, sans-serif;
+    font-size: 18pt;
+}
+#container nav ul {
+    width: 900px;
+    margin: auto;
+}
+
+
+nav a:link {
+    color: #C3DAF8;
+    text-decoration: none;
+	padding: 10px;
+}
+nav a:visited {
+    color: #B30CD8;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #FDFDFD;
+    text-decoration: none;
+	background-color:#C3DAF8;
+	padding: 10px;
+	border-radius: 20px;
+}
+nav a:active {
+    color: #000000;
+    text-decoration: none;
+}
+.submit_btn {
+    width: 170px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #C0D7EF;
+    color: black;
+    font-size: 16px;
+   
+}
+
+.submit_btn:hover{ -webkit-box-shadow: 6px 6px 35px 1px #008000;
+    box-shadow: 6px 6px 35px 1px #FFFFFF;
+color:white}
+
+.column {
+    width: 240px;
+    height: 750px;
+    float: left;
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+.cclicense {
+	width: 500px;
+	height: 20px;
+	clear: both;
+	padding: 50px 0px 0px 0px;
+}
+video {
+    width: 600px;
+    margin: auto;
+    height: 600px;
+}
+
+
+/*Ruels the page will follow for tablet sized devices*/
+@media (max-width: 1024px){
+	#container{
+		width:768px;
+	}
+	header{
+	width:768px;
+	}
+	nav{
+	width: 768px;
+	}
+	main{
+	width: 598px;
+	height:2500px;
+	}
+	footer{
+	width: 768px;
+	}
+	.column{
+		margin: 0px 10px 0px 20px;
+	}
+	}
+
+/*Rules the page will follow for mobile devices*/
+@media only screen and (max-width:375px){
+		#container{
+		width:300px;
+			background-image: url("../images/marat.jpg");
+	}
+	header{
+	width:300px;
+	}
+	nav{
+	width: 300px;
+	height: 250px;
+	position: static;
+	}
+	main{
+	width: 300px;
+	}
+	footer{
+	width: 300px;
+	}
+	aside{
+		display: none;
+	}
+		#container nav li {
+	display: list-item;
+	list-style-type: none;
+	float: none;
+	margin: 0px 0px 20px 0px;
+	width: 260px;
+	text-align: center;	
+	
+}
+	
+	#container nav ul {
+	width: 260px;
+}
+
+	nav a:link {
+	display: block;
+	width: 200px;
+	background-color: #65EBFB;
+	color: white;
+	}
+	
+	nav a:visited {
+	text-decoration: none;
+	color: white;
+}
+}
